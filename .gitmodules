@@ -1,0 +1,3 @@
+[submodule "triqs.src"]
+	path = triqs.src
+	url = https://github.com/TRIQS/triqs.git
