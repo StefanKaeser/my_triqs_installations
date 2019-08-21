@@ -4,3 +4,6 @@
 [submodule "cthyb.src"]
 	path = cthyb.src
 	url = https://github.com/TRIQS/cthyb.git
+[submodule "tprf.src"]
+	path = tprf.src
+	url = https://github.com/TRIQS/tprf.git
