@@ -15,7 +15,11 @@ cmake ../triqs.src -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX \
                    -DCMAKE_CXX_FLAGS="-std=c++17 -g -O3 -fopenmp"
 
 # Build, test and install triqs
-make -j$NCORES && make test && make install
+#make -j$NCORES && make test && make install
+
+# Modulefile is only avaible in build -> copy to install directory
+cp triqs.modulefile $INSTALL_PREFIX/share/triqs.modulefile
+cp cpp2py/cpp2py.modulefile $INSTALL_PREFIX/share/cpp2py.modulefile
 cd ../
 
 # Copy the script that was used to install in the install directory
